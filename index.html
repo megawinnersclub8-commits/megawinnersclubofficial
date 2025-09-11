@@ -37,9 +37,9 @@ background: #000;
 
 /* Header */
 header {
-background: #000;
+background: #000000;
   color: #d2c066;
-  padding: 15px 20px;
+ 
   top: 0;
   z-index: 1000;
 }
@@ -344,26 +344,7 @@ background: #000;
   transform: scale(1.2);
 }
 
-/* GIF Section */
-.gif {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  margin-top: 20px;
-}
 
-.gif video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
 .about p {
   font-size: 24px;
 }
@@ -785,10 +766,7 @@ h1 {
     width: 90px;
   }
 
-  /* GIF & Hero Image */
-  .gif {
-    height: 50vh;
-  }
+ 
 @media (max-width: 1024px) {
   
 }
@@ -825,16 +803,17 @@ h1 {
 @media (max-width: 768px) {
   .container5 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 5px;
+    
   }
 
   .container5 .box {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 180px;
   }
 
   .container5 .box span {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .container5 .box-title {
@@ -849,10 +828,10 @@ h1 {
 /* -------------------------
    Small Devices (≤380px)
 -------------------------- */
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .container5 {
     grid-template-columns: 1fr; /* single column */
-    gap: 10px;
+    gap: 5px;
   }
 
   .container5 .box {
@@ -970,11 +949,6 @@ font-size: 15px;
     width: 100px;
   }
 
-  .gif{
- 
-    height: 60vh;
-}
-  
    .image{
     height: 50vh;
     margin-left: 30px;
